@@ -1,0 +1,13 @@
+# config/application.yml
+defaults: &defaults
+  coursera:
+    url: https://www.coursera.org/maestro/api/topic/list?full=1
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

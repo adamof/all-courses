@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Provider.create name: "Udacity", url: "https://www.udacity.com"
+Provider.create name: "Coursera", url: "https://www.coursera.org"
+Provider.create name: "EdX", url: "https://www.edx.org"
