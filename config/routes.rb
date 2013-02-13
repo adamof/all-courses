@@ -1,4 +1,8 @@
 AllCourses::Application.routes.draw do
+  resources :categories
+
+  resources :providers
+
   resources :courses
 
   # The priority is based upon order of creation:
