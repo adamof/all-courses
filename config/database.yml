@@ -18,12 +18,12 @@ development:
   database: all-courses_development
   pool: 5
   username: all-courses
-  password:
+  password: all-courses
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
   #port: 5432
 
   # Schema search path. The server defaults to $user,public
@@ -44,12 +44,13 @@ test:
   database: all-courses_test
   pool: 5
   username: all-courses
-  password:
+  password: all-courses
+  host: localhost
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: all-courses_production
-  pool: 5
-  username: all-courses
-  password:
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: all-courses_production
+#   pool: 5
+#   username: all-courses
+#   password: all-courses
