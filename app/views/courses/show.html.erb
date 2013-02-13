@@ -2,9 +2,28 @@
 
 <p>
   <b>Name:</b>
-  <%= @course.name %>
+  <a href="<%= @course.url %>"><%= @course.name %></a>
 </p>
-
+<p>
+  <b>Provider:</b>
+  <%= @course.provider.name %>
+</p>
+<p>
+  <b>University:</b>
+  <%= @course.university %>
+</p>
+<p>
+  <b>Categories:</b>
+  <%= @course.categories.map(&:name).join(", ") %>
+</p>
+<p>
+  <b>Description:</b>
+  <%= @course.description %>
+</p>
+<p>
+  <b>Url:</b>
+  <a href="<%= @course.url %>"><%= @course.url %></a>
+</p>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
