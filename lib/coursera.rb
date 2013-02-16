@@ -2,10 +2,10 @@ require 'open-uri'
 require 'json'
 
 module Coursera
-  def fetch_courses
+  def self.fetch_courses
     JSON.parse(open(Settings.coursera.url).read)
   end
-  def update_courses
+  def self.update_courses
     coursera_id = Provider.where(name: "Coursera")
     fetch_courses.each do |c|
       unless Course.where(provider_id: coursera_id).find_by_name(c["name"])

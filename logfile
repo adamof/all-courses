@@ -1,0 +1,8 @@
+LOG:  database system was shut down at 2013-02-16 22:31:20 GMT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  role "yordan" already exists
+STATEMENT:  CREATE ROLE yordan NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;
+	
+FATAL:  database "all-courses_development" does not exist
+FATAL:  database "all-courses_test" does not exist
